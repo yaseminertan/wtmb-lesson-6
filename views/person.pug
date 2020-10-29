@@ -1,0 +1,7 @@
+extends layout
+block content
+    h1 There are #{person.length} people
+    h1 #{person[0].name}
+
+    each p in person
+        h1 #{p.name} #{p.age}
