@@ -1,6 +1,6 @@
-import test from 'ava'
-import request from 'supertest'
-import app from "../app"
+const test =require('ava')
+const request =require('supertest')
+const app=require('../app')
 
 test('Get list of meetups', async t => {
   t.plan(4)
