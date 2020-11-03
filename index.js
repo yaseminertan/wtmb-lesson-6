@@ -13,8 +13,6 @@ app.use(bodyParser.json())
 app.use('/person',personRouter)
 app.use('/meetup',meetupRouter)
 
-
-
 app.listen(3001,()=>{
     console.log('server listening')
 })

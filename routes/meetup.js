@@ -9,6 +9,7 @@ router.get('/all', async (req, res) => {
 })
 
 router.get('/all/json', async (req, res) => {
+  res.header("Access-Control-Allow-Origin", "*")
   const meetups = await MeetupService.findAll()
   res.send(meetups)
 })
